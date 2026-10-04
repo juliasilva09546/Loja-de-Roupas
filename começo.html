@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comece por Aqui | Seu Estilo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="logo">
+            SEU ESTILO
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="começo.html">Comece por aqui</a>
+            <a href="#">Dicas</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+        <div class="acoes">
+            <a href="login.html">Entrar</a>
+            <a href="cadastro.html" class="criar">
+                Criar conta
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- TÍTULO -->
+
+    <main>
+
+        <section class="titulo">
+
+            <p>EXPLORE NOSSA COLEÇÃO</p>
+
+            <h1>
+                Comece por <span>aqui.</span>
+            </h1>
+
+            <p class="descricao">
+                Encontre peças que combinam com seu estilo
+                e descubra novas possibilidades para seus looks.
+            </p>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+
+        <section class="categorias">
+
+            <button class="categoria ativa"
+                onclick="mostrarCategoria('calcas')">
+                Calças
+            </button>
+
+            <button class="categoria"
+                onclick="mostrarCategoria('blusas')">
+                Blusas
+            </button>
+
+            <button class="categoria"
+                onclick="mostrarCategoria('conjuntos')">
+                Conjuntos
+            </button>
+
+            <button class="categoria"
+                onclick="mostrarCategoria('vestidos')">
+                Vestidos
+            </button>
+
+            <button class="categoria"
+                onclick="mostrarCategoria('acessorios')">
+                Acessórios
+            </button>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+
+        <section class="produtos">
+
+            <!-- CALÇAS -->
+
+            <div class="categoria-produtos" id="Calças Wide Leg">
+
+                <button class="seta esquerda"
+                    onclick="rolar('lista-calcas', -1)">
+                    ‹
+                </button>
+
+                <div class="lista" id="lista-calcas">
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="calça marrom.jpg"
+                                alt="Calça marrom">
+                        </div>
+
+                        <p class="detalhes">
+                            Marrom • Tamanho P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 99,90
+                        </p>
+
+                        <button class="comprar">
+                            comprar
+                        </button>
+
+                    </div>
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="calça preta.jpg"
+                                alt="Calça preta">
+                        </div>
+
+                        <p class="detalhes">
+                            Preto • Tamanho P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 149,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/calca3.jpg"
+                                alt="Calça preta">
+                        </div>
+
+                        <h3>Calça Alfaiataria</h3>
+
+                        <p class="detalhes">
+                            Preto • Tamanho P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 159,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/calca4.jpg"
+                                alt="Calça bege">
+                        </div>
+
+                        <h3>Calça Reta Bege</h3>
+
+                        <p class="detalhes">
+                            Bege • Tamanho P ao G
+                        </p>
+
+                        <p class="preco">
+                            R$ 139,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button class="seta direita"
+                    onclick="rolar('lista-calcas', 1)">
+                    ›
+                </button>
+
+            </div>
+
+
+
+            <!-- BLUSAS -->
+
+            <div class="categoria-produtos escondido" id="blusas">
+
+                <button class="seta esquerda"
+                    onclick="rolar('lista-blusas', -1)">
+                    ‹
+                </button>
+
+                <div class="lista" id="lista-blusas">
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/blusa1.jpg"
+                                alt="Blusa listrada">
+                        </div>
+
+                        <h3>Camisa Listrada</h3>
+
+                        <p class="detalhes">
+                            Bege e marrom • P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 89,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/blusa2.jpg"
+                                alt="Blusa básica">
+                        </div>
+
+                        <h3>Blusa Básica</h3>
+
+                        <p class="detalhes">
+                            Creme • P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 59,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/blusa3.jpg"
+                                alt="Blusa elegante">
+                        </div>
+
+                        <h3>Blusa Elegance</h3>
+
+                        <p class="detalhes">
+                            Marrom • P ao G
+                        </p>
+
+                        <p class="preco">
+                            R$ 99,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button class="seta direita"
+                    onclick="rolar('lista-blusas', 1)">
+                    ›
+                </button>
+
+            </div>
+
+
+
+            <!-- CONJUNTOS -->
+
+            <div class="categoria-produtos escondido"
+                id="conjuntos">
+
+                <button class="seta esquerda"
+                    onclick="rolar('lista-conjuntos', -1)">
+                    ‹
+                </button>
+
+                <div class="lista" id="lista-conjuntos">
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/conjunto1.jpg"
+                                alt="Conjunto marrom">
+                        </div>
+
+                        <h3>Conjunto Urban</h3>
+
+                        <p class="detalhes">
+                            Marrom • P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 189,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/conjunto2.jpg"
+                                alt="Conjunto bege">
+                        </div>
+
+                        <h3>Conjunto Classic</h3>
+
+                        <p class="detalhes">
+                            Bege • P ao G
+                        </p>
+
+                        <p class="preco">
+                            R$ 199,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/conjunto3.jpg"
+                                alt="Conjunto casual">
+                        </div>
+
+                        <h3>Conjunto Casual</h3>
+
+                        <p class="detalhes">
+                            Marrom • P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 179,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button class="seta direita"
+                    onclick="rolar('lista-conjuntos', 1)">
+                    ›
+                </button>
+
+            </div>
+
+
+
+            <!-- VESTIDOS -->
+
+            <div class="categoria-produtos escondido"
+                id="vestidos">
+
+                <div class="lista">
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/vestido1.jpg"
+                                alt="Vestido">
+                        </div>
+
+                        <h3>Vestido Midi</h3>
+
+                        <p class="detalhes">
+                            Marrom • P ao GG
+                        </p>
+
+                        <p class="preco">
+                            R$ 149,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACESSÓRIOS -->
+
+            <div class="categoria-produtos escondido"
+                id="acessorios">
+
+                <div class="lista">
+
+                    <div class="produto">
+
+                        <div class="foto">
+                            <img src="imagens/bolsa1.jpg"
+                                alt="Bolsa">
+                        </div>
+
+                        <h3>Bolsa Minimal</h3>
+
+                        <p class="detalhes">
+                            Marrom
+                        </p>
+
+                        <p class="preco">
+                            R$ 119,90
+                        </p>
+
+                        <button class="comprar">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/produtos.js"></script>
+
+</body>
+
+</html>
